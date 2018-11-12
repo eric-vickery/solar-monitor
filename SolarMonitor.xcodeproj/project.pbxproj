@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070BE7E3219A262A0017C169 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 070BE7E2219A262A0017C169 /* README.md */; };
+		0774CCBC216FAD5A00465AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */; };
+		0774CCBE216FAD5A00465AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCBD216FAD5A00465AB6 /* ViewController.swift */; };
+		0774CCC1216FAD5A00465AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCBF216FAD5A00465AB6 /* Main.storyboard */; };
+		0774CCC3216FAD5A00465AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCC2216FAD5A00465AB6 /* Assets.xcassets */; };
+		0774CCC6216FAD5A00465AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCC4216FAD5A00465AB6 /* LaunchScreen.storyboard */; };
+		0774CCD1216FAD5A00465AB6 /* SolarMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCD0216FAD5A00465AB6 /* SolarMonitorTests.swift */; };
+		0774CCDC216FAD5A00465AB6 /* SolarMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCDB216FAD5A00465AB6 /* SolarMonitorUITests.swift */; };
+		0774CCEC216FAE9800465AB6 /* ModBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCE9216FAE9800465AB6 /* ModBus.swift */; };
+		0774CCED216FAE9800465AB6 /* Combox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCEA216FAE9800465AB6 /* Combox.swift */; };
+		0774CCF0216FAEE400465AB6 /* ModbusRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCEF216FAEE400465AB6 /* ModbusRegister.swift */; };
+		07A9F7D0217157C900CCDA8E /* Outback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7CF217157C900CCDA8E /* Outback.swift */; };
+		07A9F7D22175299400CCDA8E /* BaseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7D12175299400CCDA8E /* BaseDevice.swift */; };
+		07A9F7D721754A8200CCDA8E /* DeviceFiles in Resources */ = {isa = PBXBuildFile; fileRef = 07A9F7CB2171388200CCDA8E /* DeviceFiles */; };
+		07A9F7D92176881600CCDA8E /* Brultech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7D82176881600CCDA8E /* Brultech.swift */; };
+		07A9F7DB21768FA800CCDA8E /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 07A9F7DA21768FA800CCDA8E /* podfile */; };
+		07A9F7DD217699CA00CCDA8E /* BrultechChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7DC217699CA00CCDA8E /* BrultechChannels.swift */; };
+		928FD4B32FB26291EF721DF6 /* Pods_SolarMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F5218CB750E1F9B4C314BC /* Pods_SolarMonitor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0774CCCD216FAD5A00465AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0774CCB0216FAD5A00465AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0774CCB7216FAD5A00465AB6;
+			remoteInfo = SolarMonitor;
+		};
+		0774CCD8216FAD5A00465AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0774CCB0216FAD5A00465AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0774CCB7216FAD5A00465AB6;
+			remoteInfo = SolarMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070BE7E2219A262A0017C169 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0774CCBD216FAD5A00465AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0774CCC0216FAD5A00465AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0774CCC2216FAD5A00465AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0774CCC5216FAD5A00465AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0774CCC7216FAD5A00465AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0774CCCC216FAD5A00465AB6 /* SolarMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0774CCD0216FAD5A00465AB6 /* SolarMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarMonitorTests.swift; sourceTree = "<group>"; };
+		0774CCD2216FAD5A00465AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0774CCD7216FAD5A00465AB6 /* SolarMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0774CCDB216FAD5A00465AB6 /* SolarMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarMonitorUITests.swift; sourceTree = "<group>"; };
+		0774CCDD216FAD5A00465AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0774CCE9216FAE9800465AB6 /* ModBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModBus.swift; sourceTree = "<group>"; };
+		0774CCEA216FAE9800465AB6 /* Combox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combox.swift; sourceTree = "<group>"; };
+		0774CCEF216FAEE400465AB6 /* ModbusRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModbusRegister.swift; sourceTree = "<group>"; };
+		07A9F7CB2171388200CCDA8E /* DeviceFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DeviceFiles; sourceTree = "<group>"; };
+		07A9F7CF217157C900CCDA8E /* Outback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outback.swift; sourceTree = "<group>"; };
+		07A9F7D12175299400CCDA8E /* BaseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDevice.swift; sourceTree = "<group>"; };
+		07A9F7D82176881600CCDA8E /* Brultech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brultech.swift; sourceTree = "<group>"; };
+		07A9F7DA21768FA800CCDA8E /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07A9F7DC217699CA00CCDA8E /* BrultechChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrultechChannels.swift; sourceTree = "<group>"; };
+		97BF19740DC795E5501679EF /* Pods-SolarMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarMonitor.release.xcconfig"; path = "Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		F0F5218CB750E1F9B4C314BC /* Pods_SolarMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolarMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BC3EC47B7AD70BC31BD51B /* Pods-SolarMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarMonitor.debug.xcconfig"; path = "Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0774CCB5216FAD5A00465AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928FD4B32FB26291EF721DF6 /* Pods_SolarMonitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0774CCC9216FAD5A00465AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0774CCD4216FAD5A00465AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0774CCAF216FAD5A00465AB6 = {
+			isa = PBXGroup;
+			children = (
+				07A9F7DA21768FA800CCDA8E /* podfile */,
+				070BE7E2219A262A0017C169 /* README.md */,
+				0774CCBA216FAD5A00465AB6 /* SolarMonitor */,
+				0774CCCF216FAD5A00465AB6 /* SolarMonitorTests */,
+				0774CCDA216FAD5A00465AB6 /* SolarMonitorUITests */,
+				0774CCB9216FAD5A00465AB6 /* Products */,
+				C3F91013D67803D726F3626A /* Pods */,
+				7C8E87EB99FBBC42E183C78B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0774CCB9216FAD5A00465AB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */,
+				0774CCCC216FAD5A00465AB6 /* SolarMonitorTests.xctest */,
+				0774CCD7216FAD5A00465AB6 /* SolarMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0774CCBA216FAD5A00465AB6 /* SolarMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				07A9F7CB2171388200CCDA8E /* DeviceFiles */,
+				07A9F7D12175299400CCDA8E /* BaseDevice.swift */,
+				0774CCEA216FAE9800465AB6 /* Combox.swift */,
+				07A9F7CF217157C900CCDA8E /* Outback.swift */,
+				0774CCE9216FAE9800465AB6 /* ModBus.swift */,
+				0774CCEF216FAEE400465AB6 /* ModbusRegister.swift */,
+				0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */,
+				0774CCBD216FAD5A00465AB6 /* ViewController.swift */,
+				0774CCBF216FAD5A00465AB6 /* Main.storyboard */,
+				0774CCC2216FAD5A00465AB6 /* Assets.xcassets */,
+				0774CCC4216FAD5A00465AB6 /* LaunchScreen.storyboard */,
+				0774CCC7216FAD5A00465AB6 /* Info.plist */,
+				07A9F7D82176881600CCDA8E /* Brultech.swift */,
+				07A9F7DC217699CA00CCDA8E /* BrultechChannels.swift */,
+			);
+			path = SolarMonitor;
+			sourceTree = "<group>";
+		};
+		0774CCCF216FAD5A00465AB6 /* SolarMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0774CCD0216FAD5A00465AB6 /* SolarMonitorTests.swift */,
+				0774CCD2216FAD5A00465AB6 /* Info.plist */,
+			);
+			path = SolarMonitorTests;
+			sourceTree = "<group>";
+		};
+		0774CCDA216FAD5A00465AB6 /* SolarMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0774CCDB216FAD5A00465AB6 /* SolarMonitorUITests.swift */,
+				0774CCDD216FAD5A00465AB6 /* Info.plist */,
+			);
+			path = SolarMonitorUITests;
+			sourceTree = "<group>";
+		};
+		7C8E87EB99FBBC42E183C78B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0F5218CB750E1F9B4C314BC /* Pods_SolarMonitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3F91013D67803D726F3626A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC3EC47B7AD70BC31BD51B /* Pods-SolarMonitor.debug.xcconfig */,
+				97BF19740DC795E5501679EF /* Pods-SolarMonitor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0774CCB7216FAD5A00465AB6 /* SolarMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0774CCE0216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitor" */;
+			buildPhases = (
+				D7BFB406C7DD8B25516E3BAF /* [CP] Check Pods Manifest.lock */,
+				0774CCB4216FAD5A00465AB6 /* Sources */,
+				0774CCB5216FAD5A00465AB6 /* Frameworks */,
+				0774CCB6216FAD5A00465AB6 /* Resources */,
+				4E2670E8C821D939DE70E6BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolarMonitor;
+			productName = SolarMonitor;
+			productReference = 0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0774CCCB216FAD5A00465AB6 /* SolarMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0774CCE3216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorTests" */;
+			buildPhases = (
+				0774CCC8216FAD5A00465AB6 /* Sources */,
+				0774CCC9216FAD5A00465AB6 /* Frameworks */,
+				0774CCCA216FAD5A00465AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0774CCCE216FAD5A00465AB6 /* PBXTargetDependency */,
+			);
+			name = SolarMonitorTests;
+			productName = SolarMonitorTests;
+			productReference = 0774CCCC216FAD5A00465AB6 /* SolarMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0774CCD6216FAD5A00465AB6 /* SolarMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0774CCE6216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorUITests" */;
+			buildPhases = (
+				0774CCD3216FAD5A00465AB6 /* Sources */,
+				0774CCD4216FAD5A00465AB6 /* Frameworks */,
+				0774CCD5216FAD5A00465AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0774CCD9216FAD5A00465AB6 /* PBXTargetDependency */,
+			);
+			name = SolarMonitorUITests;
+			productName = SolarMonitorUITests;
+			productReference = 0774CCD7216FAD5A00465AB6 /* SolarMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0774CCB0216FAD5A00465AB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Eric Vickery";
+				TargetAttributes = {
+					0774CCB7216FAD5A00465AB6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0774CCCB216FAD5A00465AB6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0774CCB7216FAD5A00465AB6;
+					};
+					0774CCD6216FAD5A00465AB6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0774CCB7216FAD5A00465AB6;
+					};
+				};
+			};
+			buildConfigurationList = 0774CCB3216FAD5A00465AB6 /* Build configuration list for PBXProject "SolarMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0774CCAF216FAD5A00465AB6;
+			productRefGroup = 0774CCB9216FAD5A00465AB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0774CCB7216FAD5A00465AB6 /* SolarMonitor */,
+				0774CCCB216FAD5A00465AB6 /* SolarMonitorTests */,
+				0774CCD6216FAD5A00465AB6 /* SolarMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0774CCB6216FAD5A00465AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070BE7E3219A262A0017C169 /* README.md in Resources */,
+				07A9F7D721754A8200CCDA8E /* DeviceFiles in Resources */,
+				0774CCC6216FAD5A00465AB6 /* LaunchScreen.storyboard in Resources */,
+				07A9F7DB21768FA800CCDA8E /* podfile in Resources */,
+				0774CCC3216FAD5A00465AB6 /* Assets.xcassets in Resources */,
+				0774CCC1216FAD5A00465AB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0774CCCA216FAD5A00465AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0774CCD5216FAD5A00465AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E2670E8C821D939DE70E6BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BFB406C7DD8B25516E3BAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SolarMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0774CCB4216FAD5A00465AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A9F7D92176881600CCDA8E /* Brultech.swift in Sources */,
+				0774CCF0216FAEE400465AB6 /* ModbusRegister.swift in Sources */,
+				0774CCEC216FAE9800465AB6 /* ModBus.swift in Sources */,
+				0774CCBE216FAD5A00465AB6 /* ViewController.swift in Sources */,
+				07A9F7D22175299400CCDA8E /* BaseDevice.swift in Sources */,
+				07A9F7D0217157C900CCDA8E /* Outback.swift in Sources */,
+				0774CCBC216FAD5A00465AB6 /* AppDelegate.swift in Sources */,
+				0774CCED216FAE9800465AB6 /* Combox.swift in Sources */,
+				07A9F7DD217699CA00CCDA8E /* BrultechChannels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0774CCC8216FAD5A00465AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0774CCD1216FAD5A00465AB6 /* SolarMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0774CCD3216FAD5A00465AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0774CCDC216FAD5A00465AB6 /* SolarMonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0774CCCE216FAD5A00465AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0774CCB7216FAD5A00465AB6 /* SolarMonitor */;
+			targetProxy = 0774CCCD216FAD5A00465AB6 /* PBXContainerItemProxy */;
+		};
+		0774CCD9216FAD5A00465AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0774CCB7216FAD5A00465AB6 /* SolarMonitor */;
+			targetProxy = 0774CCD8216FAD5A00465AB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0774CCBF216FAD5A00465AB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0774CCC0216FAD5A00465AB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0774CCC4216FAD5A00465AB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0774CCC5216FAD5A00465AB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0774CCDE216FAD5A00465AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0774CCDF216FAD5A00465AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0774CCE1216FAD5A00465AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BC3EC47B7AD70BC31BD51B /* Pods-SolarMonitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				INFOPLIST_FILE = SolarMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0774CCE2216FAD5A00465AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BF19740DC795E5501679EF /* Pods-SolarMonitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				INFOPLIST_FILE = SolarMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0774CCE4216FAD5A00465AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				INFOPLIST_FILE = SolarMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarMonitor.app/SolarMonitor";
+			};
+			name = Debug;
+		};
+		0774CCE5216FAD5A00465AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				INFOPLIST_FILE = SolarMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarMonitor.app/SolarMonitor";
+			};
+			name = Release;
+		};
+		0774CCE7216FAD5A00465AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				INFOPLIST_FILE = SolarMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SolarMonitor;
+			};
+			name = Debug;
+		};
+		0774CCE8216FAD5A00465AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				INFOPLIST_FILE = SolarMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SolarMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0774CCB3216FAD5A00465AB6 /* Build configuration list for PBXProject "SolarMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0774CCDE216FAD5A00465AB6 /* Debug */,
+				0774CCDF216FAD5A00465AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0774CCE0216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0774CCE1216FAD5A00465AB6 /* Debug */,
+				0774CCE2216FAD5A00465AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0774CCE3216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0774CCE4216FAD5A00465AB6 /* Debug */,
+				0774CCE5216FAD5A00465AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0774CCE6216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0774CCE7216FAD5A00465AB6 /* Debug */,
+				0774CCE8216FAD5A00465AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0774CCB0216FAD5A00465AB6 /* Project object */;
+}
