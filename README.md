@@ -7,3 +7,4 @@ It communicates with the AXS Port or Combox using MODBUS over TCP/IP and is curr
 
 The Brultech portion is not complete or functional yet, more work needs to be done so it can show channels available from a Brultech GEM energy monitor.
 
+This app uses CocoaPods so once the repository is cloned a `pod update` command must be run from the project root.
