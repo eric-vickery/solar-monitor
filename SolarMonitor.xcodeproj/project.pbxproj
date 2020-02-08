@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		070BE7E3219A262A0017C169 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 070BE7E2219A262A0017C169 /* README.md */; };
+		070BE7E8219C81140017C169 /* DirectionDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070BE7E7219C81140017C169 /* DirectionDotView.swift */; };
 		0774CCBC216FAD5A00465AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */; };
 		0774CCBE216FAD5A00465AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCBD216FAD5A00465AB6 /* ViewController.swift */; };
 		0774CCC1216FAD5A00465AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCBF216FAD5A00465AB6 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		070BE7E2219A262A0017C169 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		070BE7E7219C81140017C169 /* DirectionDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionDotView.swift; sourceTree = "<group>"; };
 		0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0774CCBD216FAD5A00465AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070BE7E6219C80E90017C169 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				070BE7E7219C81140017C169 /* DirectionDotView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		0774CCAF216FAD5A00465AB6 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		0774CCBA216FAD5A00465AB6 /* SolarMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				070BE7E6219C80E90017C169 /* UI */,
 				07A9F7CB2171388200CCDA8E /* DeviceFiles */,
 				07A9F7D12175299400CCDA8E /* BaseDevice.swift */,
 				0774CCEA216FAE9800465AB6 /* Combox.swift */,
@@ -371,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A9F7D92176881600CCDA8E /* Brultech.swift in Sources */,
+				070BE7E8219C81140017C169 /* DirectionDotView.swift in Sources */,
 				0774CCF0216FAEE400465AB6 /* ModbusRegister.swift in Sources */,
 				0774CCEC216FAE9800465AB6 /* ModBus.swift in Sources */,
 				0774CCBE216FAD5A00465AB6 /* ViewController.swift in Sources */,

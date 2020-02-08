@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
+  - CocoaAsyncSocket (7.6.3)
+  - ObjectMapper (3.3.0)
+  - SwiftSocket (2.0.2)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper (~> 5.0)
+  - CocoaAsyncSocket
+  - ObjectMapper (~> 3.3)
+  - SwiftSocket (~> 2.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - CocoaAsyncSocket
+    - ObjectMapper
+    - SwiftSocket
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+
+PODFILE CHECKSUM: a1d07efe5d832cb53e7647851cc57ad0ac2d6525
+
+COCOAPODS: 1.6.0.beta.1

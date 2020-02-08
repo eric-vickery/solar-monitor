@@ -25,6 +25,8 @@ class ViewController: UIViewController
 	@IBOutlet weak var outbackBatteryAmpsText: UILabel!
 	@IBOutlet weak var outbackBatteryPowerText: UILabel!
 	@IBOutlet weak var outbackBatteryTemperatureText: UILabel!
+	
+	@IBOutlet weak var dotView: DirectionDotView!
 
 	var comboxSolarPower: Float = 0.0
 	var comboxLoadPower: Float = 0.0
@@ -57,6 +59,8 @@ class ViewController: UIViewController
 //		brultech.getDailyUsage(channelID: channel) { usage in
 //			print("Daily usage for channel \(channel) = \(usage)")
 //		}
+		
+//		dotView.startFlow(direction: .forward)
 		
 		updateUI()
 

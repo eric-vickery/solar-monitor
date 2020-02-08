@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qda-eB-9vI" userLabel="Outback Stack View">
-                                <rect key="frame" x="10" y="30" width="355" height="228.5"/>
+                                <rect key="frame" x="10" y="10" width="355" height="228.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqH-IH-H1b">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="29"/>
@@ -159,7 +157,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9oa-Nv-rzZ" userLabel="Combox Stack View">
-                                <rect key="frame" x="10" y="278.5" width="355" height="228.5"/>
+                                <rect key="frame" x="10" y="258.5" width="355" height="228.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDX-G1-teH">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="29"/>
@@ -298,13 +296,21 @@
                                     <constraint firstItem="G67-dy-NUZ" firstAttribute="centerX" secondItem="9oa-Nv-rzZ" secondAttribute="centerX" id="w2t-gc-xqY"/>
                                 </constraints>
                             </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-tM-qut" customClass="DirectionDotView" customModule="SolarMonitor" customModuleProvider="target">
+                                <rect key="frame" x="8" y="495" width="359" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="c2Y-tM-qut" firstAttribute="top" secondItem="9oa-Nv-rzZ" secondAttribute="bottom" constant="8" id="DlG-qp-tnG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9oa-Nv-rzZ" secondAttribute="trailing" constant="10" id="Eyj-8u-vMa"/>
                             <constraint firstItem="qda-eB-9vI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Jat-Pj-Qvy"/>
                             <constraint firstItem="9oa-Nv-rzZ" firstAttribute="top" secondItem="qda-eB-9vI" secondAttribute="bottom" constant="20" id="LQl-lx-f9b"/>
                             <constraint firstItem="qda-eB-9vI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="WC3-sa-whx"/>
+                            <constraint firstItem="c2Y-tM-qut" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="XbK-t3-RG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c2Y-tM-qut" secondAttribute="bottom" constant="8" id="gvW-WC-XnU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2Y-tM-qut" secondAttribute="trailing" constant="8" id="oXk-Xg-go9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qda-eB-9vI" secondAttribute="trailing" constant="10" id="s74-eH-3y6"/>
                             <constraint firstItem="9oa-Nv-rzZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wQo-ml-KKk"/>
                         </constraints>
@@ -318,6 +324,7 @@
                         <outlet property="comboxLoadText" destination="SMc-jS-BcJ" id="8hl-lk-3Cr"/>
                         <outlet property="comboxSolarText" destination="vyg-Rh-Vpb" id="sff-Fe-NxM"/>
                         <outlet property="comboxVoltageText" destination="f3e-ji-4P0" id="uwO-9K-oGH"/>
+                        <outlet property="dotView" destination="c2Y-tM-qut" id="BEy-Wy-9xA"/>
                         <outlet property="outbackBatteryAmpsText" destination="OKC-lC-Gaz" id="4je-NA-HgI"/>
                         <outlet property="outbackBatteryPowerText" destination="b7P-ny-aoa" id="bpU-Zc-A0U"/>
                         <outlet property="outbackBatterySOCText" destination="URj-Gn-dCA" id="uc1-mQ-6tr"/>
@@ -329,6 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="134"/>
         </scene>
     </scenes>
 </document>
