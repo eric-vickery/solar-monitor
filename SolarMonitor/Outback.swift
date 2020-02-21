@@ -100,7 +100,7 @@ class Outback: BaseDevice
 			}
 			else
 			{
-				print("Could not connect")
+				print("Outback could not connect")
 				numDevices = 0
 				completionHandler(false)
 				return

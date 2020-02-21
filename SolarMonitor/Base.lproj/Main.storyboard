@@ -296,21 +296,13 @@
                                     <constraint firstItem="G67-dy-NUZ" firstAttribute="centerX" secondItem="9oa-Nv-rzZ" secondAttribute="centerX" id="w2t-gc-xqY"/>
                                 </constraints>
                             </stackView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-tM-qut" customClass="DirectionDotView" customModule="SolarMonitor" customModuleProvider="target">
-                                <rect key="frame" x="8" y="495" width="359" height="164"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="c2Y-tM-qut" firstAttribute="top" secondItem="9oa-Nv-rzZ" secondAttribute="bottom" constant="8" id="DlG-qp-tnG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9oa-Nv-rzZ" secondAttribute="trailing" constant="10" id="Eyj-8u-vMa"/>
                             <constraint firstItem="qda-eB-9vI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Jat-Pj-Qvy"/>
                             <constraint firstItem="9oa-Nv-rzZ" firstAttribute="top" secondItem="qda-eB-9vI" secondAttribute="bottom" constant="20" id="LQl-lx-f9b"/>
                             <constraint firstItem="qda-eB-9vI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="WC3-sa-whx"/>
-                            <constraint firstItem="c2Y-tM-qut" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="XbK-t3-RG9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c2Y-tM-qut" secondAttribute="bottom" constant="8" id="gvW-WC-XnU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2Y-tM-qut" secondAttribute="trailing" constant="8" id="oXk-Xg-go9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qda-eB-9vI" secondAttribute="trailing" constant="10" id="s74-eH-3y6"/>
                             <constraint firstItem="9oa-Nv-rzZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wQo-ml-KKk"/>
                         </constraints>
@@ -324,7 +316,6 @@
                         <outlet property="comboxLoadText" destination="SMc-jS-BcJ" id="8hl-lk-3Cr"/>
                         <outlet property="comboxSolarText" destination="vyg-Rh-Vpb" id="sff-Fe-NxM"/>
                         <outlet property="comboxVoltageText" destination="f3e-ji-4P0" id="uwO-9K-oGH"/>
-                        <outlet property="dotView" destination="c2Y-tM-qut" id="BEy-Wy-9xA"/>
                         <outlet property="outbackBatteryAmpsText" destination="OKC-lC-Gaz" id="4je-NA-HgI"/>
                         <outlet property="outbackBatteryPowerText" destination="b7P-ny-aoa" id="bpU-Zc-A0U"/>
                         <outlet property="outbackBatterySOCText" destination="URj-Gn-dCA" id="uc1-mQ-6tr"/>
