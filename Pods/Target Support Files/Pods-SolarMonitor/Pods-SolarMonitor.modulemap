@@ -1,6 +1,0 @@
-framework module Pods_SolarMonitor {
-  umbrella header "Pods-SolarMonitor-umbrella.h"
-
-  export *
-  module * { export * }
-}

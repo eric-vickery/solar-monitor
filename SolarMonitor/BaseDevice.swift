@@ -8,30 +8,40 @@
 import Foundation
 import ObjectMapper
 
-class BaseDevice: NSObject, Mappable
+class BaseDevice: NSObject, Mappable, ObservableObject
 {
+    @Published var solarPower = ""
+    @Published var loadPower = ""
+    @Published var batteryVoltage = ""
+    @Published var batterySOC = ""
+    @Published var batteryAmps = ""
+    @Published var batteryPower = ""
+    @Published var batteryTemperature = ""
+    
 	var modbus: ModBus?
 	
 	var deviceId: UInt8 = 0
 	var registers: [String : ModbusRegister]?
+    var connected = false
+    var testMode = false
 	
 	required init?(map: Map)
 	{
 	}
-	
+
 	func mapping(map: Map)
 	{
 		var deviceIdString = ""
-		
+
 		deviceIdString	<- map["deviceId"]
-		registers		<- map["registers"] 
-		
+		registers		<- map["registers"]
+
 		let index = deviceIdString.index(deviceIdString.startIndex, offsetBy: 2)
 		let subDeviceId = deviceIdString[index...]
 		deviceId = UInt8(subDeviceId, radix: 16)!
 	}
 	
-	class func loadFromFile(deviceName: String) -> BaseDevice?
+    class func loadFromFile(deviceName: String, testMode: Bool = false) -> BaseDevice?
 	{
 		var device: BaseDevice?
 		
@@ -63,22 +73,60 @@ class BaseDevice: NSObject, Mappable
 		{
 			print("Invalid filename/path.")
 		}
+
+        if testMode
+        {
+            if let device = device
+            {
+                device.testMode = testMode
+                device.solarPower = "1800 W"
+                device.loadPower = "650 W"
+                device.batteryVoltage = "48.24 V"
+                device.batterySOC = "100%"
+                device.batteryAmps = "12.00 A"
+                device.batteryPower = "400 W"
+                device.batteryTemperature = "12 C / 93 F"
+            }
+        }
 		
 		return device
 	}
+    
+    func startGettingData()
+    {
+        if !testMode
+        {
+            DispatchQueue.main.async {
+                let _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                    self.solarPower = String(format: "%.0f W", self.getCurrentTotalPowerFromSolar() ?? 0.0)
+                    self.loadPower = String(format: "%.0f W", self.getCurrentLoadPower() ?? 0.0)
+                    self.batteryVoltage = String(format: "%.02f V", self.getCurrentBatteryVoltage() ?? 0.0)
+                    self.batterySOC = String(format: "%.0f%%", self.getCurrentBatteryStateOfCharge() ?? 0.0)
+                    self.batteryAmps = String(format: "%.02f A", self.getCurrentBatteryCurrent() ?? 0.0)
+                    self.batteryPower = String(format: "%.0f W", self.getCurrentBatteryPower() ?? 0.0)
+                    self.batteryTemperature = String(format: "%.0f C / %.02f F", self.getCurrentBatteryTemperature() ?? 0.0, self.convertToFahrenheit(temperatureInCelsius: self.getCurrentBatteryTemperature() ?? 0.0))
+                }
+            }
+        }
+    }
 	
 	func connect(address: String?, port: Int32, completionHandler: @escaping (Bool) -> Void)
 	{
 	}
 
+    func getTypeName() -> String
+    {
+        return "Undefined"
+    }
+    
 	func getName() -> String?
 	{
-		return getString("Device Name")
+        return getString("Device Name")
 	}
 	
 	func getFirmwareVersion() -> String?
 	{
-		return getString("Firmware Version")
+        return getString("Firmware Version")
 	}
 	
 	func getCurrentBatteryVoltage() -> Float?
@@ -158,7 +206,7 @@ class BaseDevice: NSObject, Mappable
 	
 	func getString(_ registerName: String, offset: UInt16 = 0) -> String?
 	{
-		if let modbus = self.modbus
+		if connected, let modbus = self.modbus
 		{
 			guard let registers = self.registers else {return nil}
 			if let register = registers[registerName]
@@ -178,7 +226,7 @@ class BaseDevice: NSObject, Mappable
 	
 	func getFloat(_ registerName: String, offset: UInt16 = 0) -> Float?
 	{
-		if let data = getInt(registerName, offset: offset)
+		if connected, let data = getInt(registerName, offset: offset)
 		{
 			guard let registers = self.registers else {return nil}
 			if let register = registers[registerName]
@@ -191,7 +239,7 @@ class BaseDevice: NSObject, Mappable
 	
 	func getInt(_ registerName: String, offset: UInt16 = 0) -> Int32?
 	{
-		if let data = readRegisters(registerName, offset: offset)
+		if connected, let data = readRegisters(registerName, offset: offset)
 		{
 			if data.count > 0
 			{
@@ -213,7 +261,7 @@ class BaseDevice: NSObject, Mappable
 	
 	func getUInt32(_ registerName: String, offset: UInt16 = 0) -> UInt32?
 	{
-		if let data = readRegisters(registerName, offset: offset)
+		if connected, let data = readRegisters(registerName, offset: offset)
 		{
 			if data.count > 0
 			{
@@ -225,7 +273,7 @@ class BaseDevice: NSObject, Mappable
 	
 	func getUInt16(_ registerName: String, offset: UInt16 = 0) -> UInt16?
 	{
-		if let data = readRegisters(registerName, offset: offset)
+		if connected, let data = readRegisters(registerName, offset: offset)
 		{
 			if data.count > 0
 			{
@@ -237,7 +285,7 @@ class BaseDevice: NSObject, Mappable
 	
 	func getBoolean(_ registerName: String, offset: UInt16 = 0) -> Bool?
 	{
-		if let data = readRegisters(registerName, offset: offset)
+		if connected, let data = readRegisters(registerName, offset: offset)
 		{
 			if data.count == 2
 			{
@@ -293,4 +341,9 @@ class BaseDevice: NSObject, Mappable
 		}
 		return result
 	}
+    
+    private func convertToFahrenheit(temperatureInCelsius: Float) -> Float
+    {
+        return temperatureInCelsius * 1.8 + 32
+    }
 }

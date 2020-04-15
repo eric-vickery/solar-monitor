@@ -7,7 +7,6 @@
 
 import Foundation
 import CocoaAsyncSocket
-import ObjectMapper
 
 class Combox: BaseDevice, GCDAsyncUdpSocketDelegate
 {
@@ -37,10 +36,13 @@ class Combox: BaseDevice, GCDAsyncUdpSocketDelegate
 		{
 			if let modbus = self.modbus
 			{
-				completionHandler(modbus.connect(address: address, port: port))
+                let didConnect = modbus.connect(address: address, port: port)
+                self.connected = didConnect
+				completionHandler(didConnect)
 			}
 			else
 			{
+                self.connected = false
 				completionHandler(false)
 			}
 		}
@@ -49,10 +51,13 @@ class Combox: BaseDevice, GCDAsyncUdpSocketDelegate
 			findCombox() { address in
 				if let modbus = self.modbus, let address = address
 				{
-					completionHandler(modbus.connect(address: address, port: port))
+                    let didConnect = modbus.connect(address: address, port: port)
+                    self.connected = didConnect
+                    completionHandler(didConnect)
 				}
 				else
 				{
+                    self.connected = false
 					completionHandler(false)
 				}
 			}
@@ -101,6 +106,11 @@ class Combox: BaseDevice, GCDAsyncUdpSocketDelegate
 
 	}
 	
+    override func getTypeName() -> String
+    {
+        return "Combox"
+    }
+    
 	override func getCurrentBatteryVoltage() -> Float?
 	{
 		return getFloat("Battery Bank 1 Voltage")

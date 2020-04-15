@@ -2,8 +2,8 @@
 //  SolarMonitorTests.swift
 //  SolarMonitorTests
 //
-//  Created by Eric Vickery on 10/11/18.
-//  Copyright © 2018 Eric Vickery. All rights reserved.
+//  Created by Eric Vickery on 2/21/20.
+//  Copyright © 2020 Eric Vickery. All rights reserved.
 //
 
 import XCTest

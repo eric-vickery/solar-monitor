@@ -1,4 +1,4 @@
-# solar-monitor
+# SolarMonitor
 An iOS app that can show real-time stats for an Outback with AXS Port or a Schneider with Combox system.
 
 NOTE: This app will only run correctly if you have an Outback solar system with an AXS Port and/or a Schneider Electric Conext solar system with a Combox.
@@ -7,4 +7,3 @@ It communicates with the AXS Port or Combox using MODBUS over TCP/IP and is curr
 
 The Brultech portion is not complete or functional yet, more work needs to be done so it can show channels available from a Brultech GEM energy monitor.
 
-This app uses CocoaPods so once the repository is cloned a `pod update` command must be run from the project root.

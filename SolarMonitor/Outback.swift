@@ -90,10 +90,12 @@ class Outback: BaseDevice
 		{
 			if modbus.connect(address: address, port: Outback.MODBUS_PORT)
 			{
+                connected = true
 				if Outback.SUNSPEC_MODBUS_MAP_ID != getSunSpecID()
 				{
 					print("Not SunSpec")
 					numDevices = 0
+                    connected = false
 					completionHandler(false)
 					return
 				}
@@ -102,6 +104,7 @@ class Outback: BaseDevice
 			{
 				print("Outback could not connect")
 				numDevices = 0
+                connected = false
 				completionHandler(false)
 				return
 			}
@@ -125,6 +128,7 @@ class Outback: BaseDevice
 				// Strange calculation because we get back 2 bytes for each register
 				if data.count != numRegistersToRead * 2
 				{
+                    connected = false
 					completionHandler(false)
 					return
 				}
@@ -144,6 +148,7 @@ class Outback: BaseDevice
 			readConfigDataFromDevice()
 		}
 
+        connected = true
 		completionHandler(true)
 	}
 	
@@ -207,6 +212,11 @@ class Outback: BaseDevice
 		return ""
 	}
 	
+    override func getTypeName() -> String
+    {
+        return "Outback"
+    }
+    
 	override func getCurrentBatteryVoltage() -> Float?
 	{
 		return getFloat("Battery Voltage", offset: gatewayAddress)

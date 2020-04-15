@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-import AlamofireObjectMapper
+//import AlamofireObjectMapper
 
 // TODO Move the host to a setting instead of it being hard coded
 class Brultech
@@ -72,90 +72,90 @@ class Brultech
 	//
 	//return valuesDict
 	
-	func refreshStatesFromHardware()
-	{
-		var indexedPowerData: [Int: Float] = [Int: Float]()
-		
-		var URL = "http://\(self.host)/index.php/pages/search/all/0"
-		Alamofire.request(URL).responseObject { (response: DataResponse<BrultechChannels>) in
-			if response.error != nil
-			{
-				return
-			}
-			
-			if let activeChannels = response.result.value?.channelList
-			{
-				URL = "http://\(self.host)/index.php/pages/search/getWattVals"
-				Alamofire.request(URL).responseJSON { (response) in
-					if response.error != nil
-					{
-						return
-					}
-
-					if let deviceList = response.result.value as? [String:[String:[String]]]
-					{
-						var index = 0
-						for deviceInfo in deviceList.values
-						{
-							if let wattValues = deviceInfo["watts"]
-							{
-								for item in wattValues
-								{
-									indexedPowerData[activeChannels[index]] = Float(item)
-									index += 1
-								}
-							}
-						}
-						self.indexedPowerData = indexedPowerData
-					}
-				}
-			}
-		}
-	}
-
-	func getDailyUsage(channelID: Int, completionHandler: @escaping (Float) -> Void)
-	{
-		var dailyConsumption: Float = 0.0
-		
-		let parameters: [String: String] = [
-			"chans" : "\(channelID), -1, -1"
-		]
-		Alamofire.request("http://\(self.host)/index.php/pages/load/loadBarGraph", method: .post, parameters: parameters, encoding: URLEncoding.default)
-			.responseJSON { (response) in
-				if response.error != nil
-				{
-					completionHandler(0.0)
-					return
-				}
-				
-				if let hourlyConsumptionArray = response.result.value as? [[String: Any]]
-				{
-					var channelName: String?
-					
-					for hourlyConsumption in hourlyConsumptionArray
-					{
-						if channelName == nil
-						{
-							let keys = hourlyConsumption.keys
-							for key in keys
-							{
-								if key != "date"
-								{
-									channelName = key
-								}
-							}
-						}
-						
-						if let deviceName = channelName, let consumption = hourlyConsumption[deviceName] as? Double
-						{
-							dailyConsumption += Float(consumption)
-						}
-					}
-					completionHandler(dailyConsumption)
-				}
-		}
-		return
-	}
+//	func refreshStatesFromHardware()
+//	{
+//		var indexedPowerData: [Int: Float] = [Int: Float]()
+//		
+//		var URL = "http://\(self.host)/index.php/pages/search/all/0"
+//		Alamofire.request(URL).responseObject { (response: DataResponse<BrultechChannels>) in
+//			if response.error != nil
+//			{
+//				return
+//			}
+//			
+//			if let activeChannels = response.result.value?.channelList
+//			{
+//				URL = "http://\(self.host)/index.php/pages/search/getWattVals"
+//				Alamofire.request(URL).responseJSON { (response) in
+//					if response.error != nil
+//					{
+//						return
+//					}
+//
+//					if let deviceList = response.result.value as? [String:[String:[String]]]
+//					{
+//						var index = 0
+//						for deviceInfo in deviceList.values
+//						{
+//							if let wattValues = deviceInfo["watts"]
+//							{
+//								for item in wattValues
+//								{
+//									indexedPowerData[activeChannels[index]] = Float(item)
+//									index += 1
+//								}
+//							}
+//						}
+//						self.indexedPowerData = indexedPowerData
+//					}
+//				}
+//			}
+//		}
+//	}
+//
+//	func getDailyUsage(channelID: Int, completionHandler: @escaping (Float) -> Void)
+//	{
+//		var dailyConsumption: Float = 0.0
+//		
+//		let parameters: [String: String] = [
+//			"chans" : "\(channelID), -1, -1"
+//		]
+//		Alamofire.request("http://\(self.host)/index.php/pages/load/loadBarGraph", method: .post, parameters: parameters, encoding: URLEncoding.default)
+//			.responseJSON { (response) in
+//				if response.error != nil
+//				{
+//					completionHandler(0.0)
+//					return
+//				}
+//				
+//				if let hourlyConsumptionArray = response.result.value as? [[String: Any]]
+//				{
+//					var channelName: String?
+//					
+//					for hourlyConsumption in hourlyConsumptionArray
+//					{
+//						if channelName == nil
+//						{
+//							let keys = hourlyConsumption.keys
+//							for key in keys
+//							{
+//								if key != "date"
+//								{
+//									channelName = key
+//								}
+//							}
+//						}
+//						
+//						if let deviceName = channelName, let consumption = hourlyConsumption[deviceName] as? Double
+//						{
+//							dailyConsumption += Float(consumption)
+//						}
+//					}
+//					completionHandler(dailyConsumption)
+//				}
+//		}
+//		return
+//	}
 
 }
 //kOnlineState = "online"

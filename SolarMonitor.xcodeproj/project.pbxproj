@@ -3,95 +3,140 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		070BE7E3219A262A0017C169 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 070BE7E2219A262A0017C169 /* README.md */; };
-		070BE7E8219C81140017C169 /* DirectionDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070BE7E7219C81140017C169 /* DirectionDotView.swift */; };
-		0774CCBC216FAD5A00465AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */; };
-		0774CCBE216FAD5A00465AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCBD216FAD5A00465AB6 /* ViewController.swift */; };
-		0774CCC1216FAD5A00465AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCBF216FAD5A00465AB6 /* Main.storyboard */; };
-		0774CCC3216FAD5A00465AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCC2216FAD5A00465AB6 /* Assets.xcassets */; };
-		0774CCC6216FAD5A00465AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0774CCC4216FAD5A00465AB6 /* LaunchScreen.storyboard */; };
-		0774CCD1216FAD5A00465AB6 /* SolarMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCD0216FAD5A00465AB6 /* SolarMonitorTests.swift */; };
-		0774CCDC216FAD5A00465AB6 /* SolarMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCDB216FAD5A00465AB6 /* SolarMonitorUITests.swift */; };
-		0774CCEC216FAE9800465AB6 /* ModBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCE9216FAE9800465AB6 /* ModBus.swift */; };
-		0774CCED216FAE9800465AB6 /* Combox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCEA216FAE9800465AB6 /* Combox.swift */; };
-		0774CCF0216FAEE400465AB6 /* ModbusRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774CCEF216FAEE400465AB6 /* ModbusRegister.swift */; };
-		07A9F7D0217157C900CCDA8E /* Outback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7CF217157C900CCDA8E /* Outback.swift */; };
-		07A9F7D22175299400CCDA8E /* BaseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7D12175299400CCDA8E /* BaseDevice.swift */; };
-		07A9F7D721754A8200CCDA8E /* DeviceFiles in Resources */ = {isa = PBXBuildFile; fileRef = 07A9F7CB2171388200CCDA8E /* DeviceFiles */; };
-		07A9F7D92176881600CCDA8E /* Brultech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7D82176881600CCDA8E /* Brultech.swift */; };
-		07A9F7DB21768FA800CCDA8E /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 07A9F7DA21768FA800CCDA8E /* podfile */; };
-		07A9F7DD217699CA00CCDA8E /* BrultechChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9F7DC217699CA00CCDA8E /* BrultechChannels.swift */; };
-		928FD4B32FB26291EF721DF6 /* Pods_SolarMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F5218CB750E1F9B4C314BC /* Pods_SolarMonitor.framework */; };
+		D013EAF42435839C00F1BE8A /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */; };
+		D013EAF7243585E900F1BE8A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAF6243585E900F1BE8A /* Alamofire */; };
+		D013EAFD24358C0F00F1BE8A /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAFC24358C0F00F1BE8A /* ObjectMapper */; };
+		D013EB0E24363A8E00F1BE8A /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D013EB0624363A2B00F1BE8A /* SwiftSocket.framework */; };
+		D013EB0F24363A8F00F1BE8A /* SwiftSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D013EB0624363A2B00F1BE8A /* SwiftSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D013EB13243687DC00F1BE8A /* SolarSystemUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D013EB12243687DC00F1BE8A /* SolarSystemUIView.swift */; };
+		D09E65FA24009891003CC631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E65F924009891003CC631 /* AppDelegate.swift */; };
+		D09E65FC24009891003CC631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E65FB24009891003CC631 /* SceneDelegate.swift */; };
+		D09E65FE24009891003CC631 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E65FD24009891003CC631 /* ContentView.swift */; };
+		D09E660024009892003CC631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09E65FF24009892003CC631 /* Assets.xcassets */; };
+		D09E660324009892003CC631 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09E660224009892003CC631 /* Preview Assets.xcassets */; };
+		D09E660624009892003CC631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09E660424009892003CC631 /* LaunchScreen.storyboard */; };
+		D09E661124009892003CC631 /* SolarMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E661024009892003CC631 /* SolarMonitorTests.swift */; };
+		D09E661C24009892003CC631 /* SolarMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E661B24009892003CC631 /* SolarMonitorUITests.swift */; };
+		D09E662A240099EC003CC631 /* DeviceFiles in Resources */ = {isa = PBXBuildFile; fileRef = D09E6629240099EC003CC631 /* DeviceFiles */; };
+		D09E663224009A2C003CC631 /* Brultech.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E662B24009A2C003CC631 /* Brultech.swift */; };
+		D09E663324009A2C003CC631 /* ModBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E662C24009A2C003CC631 /* ModBus.swift */; };
+		D09E663424009A2C003CC631 /* BrultechChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E662D24009A2C003CC631 /* BrultechChannels.swift */; };
+		D09E663524009A2C003CC631 /* Combox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E662E24009A2C003CC631 /* Combox.swift */; };
+		D09E663624009A2C003CC631 /* ModbusRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E662F24009A2C003CC631 /* ModbusRegister.swift */; };
+		D09E663724009A2C003CC631 /* Outback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E663024009A2C003CC631 /* Outback.swift */; };
+		D09E663824009A2C003CC631 /* BaseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E663124009A2C003CC631 /* BaseDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0774CCCD216FAD5A00465AB6 /* PBXContainerItemProxy */ = {
+		D013EB0524363A2B00F1BE8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0774CCB0216FAD5A00465AB6 /* Project object */;
+			containerPortal = D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 377DAA691DCDE40200009697;
+			remoteInfo = "SwiftSocket iOS";
+		};
+		D013EB0724363A2B00F1BE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 377DAA761DCDE45D00009697;
+			remoteInfo = "SwiftSocket macOS";
+		};
+		D013EB0924363A2B00F1BE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37454ECA1E06158200800AE5;
+			remoteInfo = "SwiftSocket tvOS";
+		};
+		D013EB0B24363A2B00F1BE8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 375C482D1DDC4C56008C701D;
+			remoteInfo = "iOS Example";
+		};
+		D09E660D24009892003CC631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D09E65EE24009891003CC631 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0774CCB7216FAD5A00465AB6;
+			remoteGlobalIDString = D09E65F524009891003CC631;
 			remoteInfo = SolarMonitor;
 		};
-		0774CCD8216FAD5A00465AB6 /* PBXContainerItemProxy */ = {
+		D09E661824009892003CC631 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0774CCB0216FAD5A00465AB6 /* Project object */;
+			containerPortal = D09E65EE24009891003CC631 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0774CCB7216FAD5A00465AB6;
+			remoteGlobalIDString = D09E65F524009891003CC631;
 			remoteInfo = SolarMonitor;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D013EB1024363A8F00F1BE8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D013EB0F24363A8F00F1BE8A /* SwiftSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		070BE7E2219A262A0017C169 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		070BE7E7219C81140017C169 /* DirectionDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionDotView.swift; sourceTree = "<group>"; };
-		0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0774CCBD216FAD5A00465AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0774CCC0216FAD5A00465AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0774CCC2216FAD5A00465AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0774CCC5216FAD5A00465AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0774CCC7216FAD5A00465AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0774CCCC216FAD5A00465AB6 /* SolarMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0774CCD0216FAD5A00465AB6 /* SolarMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarMonitorTests.swift; sourceTree = "<group>"; };
-		0774CCD2216FAD5A00465AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0774CCD7216FAD5A00465AB6 /* SolarMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0774CCDB216FAD5A00465AB6 /* SolarMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarMonitorUITests.swift; sourceTree = "<group>"; };
-		0774CCDD216FAD5A00465AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0774CCE9216FAE9800465AB6 /* ModBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModBus.swift; sourceTree = "<group>"; };
-		0774CCEA216FAE9800465AB6 /* Combox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combox.swift; sourceTree = "<group>"; };
-		0774CCEF216FAEE400465AB6 /* ModbusRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModbusRegister.swift; sourceTree = "<group>"; };
-		07A9F7CB2171388200CCDA8E /* DeviceFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DeviceFiles; sourceTree = "<group>"; };
-		07A9F7CF217157C900CCDA8E /* Outback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outback.swift; sourceTree = "<group>"; };
-		07A9F7D12175299400CCDA8E /* BaseDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDevice.swift; sourceTree = "<group>"; };
-		07A9F7D82176881600CCDA8E /* Brultech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brultech.swift; sourceTree = "<group>"; };
-		07A9F7DA21768FA800CCDA8E /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		07A9F7DC217699CA00CCDA8E /* BrultechChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrultechChannels.swift; sourceTree = "<group>"; };
-		97BF19740DC795E5501679EF /* Pods-SolarMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarMonitor.release.xcconfig"; path = "Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor.release.xcconfig"; sourceTree = "<group>"; };
-		F0F5218CB750E1F9B4C314BC /* Pods_SolarMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SolarMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9BC3EC47B7AD70BC31BD51B /* Pods-SolarMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SolarMonitor.debug.xcconfig"; path = "Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSocket.xcodeproj; path = ../SwiftSocket/SwiftSocket.xcodeproj; sourceTree = "<group>"; };
+		D013EB12243687DC00F1BE8A /* SolarSystemUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemUIView.swift; sourceTree = "<group>"; };
+		D09E65F624009891003CC631 /* SolarMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09E65F924009891003CC631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D09E65FB24009891003CC631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D09E65FD24009891003CC631 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D09E65FF24009892003CC631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D09E660224009892003CC631 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D09E660524009892003CC631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D09E660724009892003CC631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09E660C24009892003CC631 /* SolarMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09E661024009892003CC631 /* SolarMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarMonitorTests.swift; sourceTree = "<group>"; };
+		D09E661224009892003CC631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09E661724009892003CC631 /* SolarMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09E661B24009892003CC631 /* SolarMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarMonitorUITests.swift; sourceTree = "<group>"; };
+		D09E661D24009892003CC631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09E6629240099EC003CC631 /* DeviceFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DeviceFiles; sourceTree = "<group>"; };
+		D09E662B24009A2C003CC631 /* Brultech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brultech.swift; sourceTree = "<group>"; };
+		D09E662C24009A2C003CC631 /* ModBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModBus.swift; sourceTree = "<group>"; };
+		D09E662D24009A2C003CC631 /* BrultechChannels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrultechChannels.swift; sourceTree = "<group>"; };
+		D09E662E24009A2C003CC631 /* Combox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combox.swift; sourceTree = "<group>"; };
+		D09E662F24009A2C003CC631 /* ModbusRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModbusRegister.swift; sourceTree = "<group>"; };
+		D09E663024009A2C003CC631 /* Outback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outback.swift; sourceTree = "<group>"; };
+		D09E663124009A2C003CC631 /* BaseDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0774CCB5216FAD5A00465AB6 /* Frameworks */ = {
+		D09E65F324009891003CC631 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928FD4B32FB26291EF721DF6 /* Pods_SolarMonitor.framework in Frameworks */,
+				D013EAFD24358C0F00F1BE8A /* ObjectMapper in Frameworks */,
+				D013EAF42435839C00F1BE8A /* CocoaAsyncSocket in Frameworks */,
+				D013EAF7243585E900F1BE8A /* Alamofire in Frameworks */,
+				D013EB0E24363A8E00F1BE8A /* SwiftSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0774CCC9216FAD5A00465AB6 /* Frameworks */ = {
+		D09E660924009892003CC631 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0774CCD4216FAD5A00465AB6 /* Frameworks */ = {
+		D09E661424009892003CC631 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,177 +146,189 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		070BE7E6219C80E90017C169 /* UI */ = {
+		D013EAFF24363A2B00F1BE8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				070BE7E7219C81140017C169 /* DirectionDotView.swift */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		0774CCAF216FAD5A00465AB6 = {
-			isa = PBXGroup;
-			children = (
-				07A9F7DA21768FA800CCDA8E /* podfile */,
-				070BE7E2219A262A0017C169 /* README.md */,
-				0774CCBA216FAD5A00465AB6 /* SolarMonitor */,
-				0774CCCF216FAD5A00465AB6 /* SolarMonitorTests */,
-				0774CCDA216FAD5A00465AB6 /* SolarMonitorUITests */,
-				0774CCB9216FAD5A00465AB6 /* Products */,
-				C3F91013D67803D726F3626A /* Pods */,
-				7C8E87EB99FBBC42E183C78B /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		0774CCB9216FAD5A00465AB6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */,
-				0774CCCC216FAD5A00465AB6 /* SolarMonitorTests.xctest */,
-				0774CCD7216FAD5A00465AB6 /* SolarMonitorUITests.xctest */,
+				D013EB0624363A2B00F1BE8A /* SwiftSocket.framework */,
+				D013EB0824363A2B00F1BE8A /* SwiftSocket.framework */,
+				D013EB0A24363A2B00F1BE8A /* SwiftSocket.framework */,
+				D013EB0C24363A2B00F1BE8A /* iOS Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0774CCBA216FAD5A00465AB6 /* SolarMonitor */ = {
+		D013EB0D24363A8E00F1BE8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				070BE7E6219C80E90017C169 /* UI */,
-				07A9F7CB2171388200CCDA8E /* DeviceFiles */,
-				07A9F7D12175299400CCDA8E /* BaseDevice.swift */,
-				0774CCEA216FAE9800465AB6 /* Combox.swift */,
-				07A9F7CF217157C900CCDA8E /* Outback.swift */,
-				0774CCE9216FAE9800465AB6 /* ModBus.swift */,
-				0774CCEF216FAEE400465AB6 /* ModbusRegister.swift */,
-				0774CCBB216FAD5A00465AB6 /* AppDelegate.swift */,
-				0774CCBD216FAD5A00465AB6 /* ViewController.swift */,
-				0774CCBF216FAD5A00465AB6 /* Main.storyboard */,
-				0774CCC2216FAD5A00465AB6 /* Assets.xcassets */,
-				0774CCC4216FAD5A00465AB6 /* LaunchScreen.storyboard */,
-				0774CCC7216FAD5A00465AB6 /* Info.plist */,
-				07A9F7D82176881600CCDA8E /* Brultech.swift */,
-				07A9F7DC217699CA00CCDA8E /* BrultechChannels.swift */,
-			);
-			path = SolarMonitor;
-			sourceTree = "<group>";
-		};
-		0774CCCF216FAD5A00465AB6 /* SolarMonitorTests */ = {
-			isa = PBXGroup;
-			children = (
-				0774CCD0216FAD5A00465AB6 /* SolarMonitorTests.swift */,
-				0774CCD2216FAD5A00465AB6 /* Info.plist */,
-			);
-			path = SolarMonitorTests;
-			sourceTree = "<group>";
-		};
-		0774CCDA216FAD5A00465AB6 /* SolarMonitorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0774CCDB216FAD5A00465AB6 /* SolarMonitorUITests.swift */,
-				0774CCDD216FAD5A00465AB6 /* Info.plist */,
-			);
-			path = SolarMonitorUITests;
-			sourceTree = "<group>";
-		};
-		7C8E87EB99FBBC42E183C78B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F0F5218CB750E1F9B4C314BC /* Pods_SolarMonitor.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3F91013D67803D726F3626A /* Pods */ = {
+		D013EB11243687B200F1BE8A /* UI Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				F9BC3EC47B7AD70BC31BD51B /* Pods-SolarMonitor.debug.xcconfig */,
-				97BF19740DC795E5501679EF /* Pods-SolarMonitor.release.xcconfig */,
+				D013EB12243687DC00F1BE8A /* SolarSystemUIView.swift */,
 			);
-			path = Pods;
+			path = "UI Widgets";
+			sourceTree = "<group>";
+		};
+		D09E65ED24009891003CC631 = {
+			isa = PBXGroup;
+			children = (
+				D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */,
+				D09E65F824009891003CC631 /* SolarMonitor */,
+				D09E660F24009892003CC631 /* SolarMonitorTests */,
+				D09E661A24009892003CC631 /* SolarMonitorUITests */,
+				D09E65F724009891003CC631 /* Products */,
+				D013EB0D24363A8E00F1BE8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D09E65F724009891003CC631 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D09E65F624009891003CC631 /* SolarMonitor.app */,
+				D09E660C24009892003CC631 /* SolarMonitorTests.xctest */,
+				D09E661724009892003CC631 /* SolarMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D09E65F824009891003CC631 /* SolarMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				D013EB11243687B200F1BE8A /* UI Widgets */,
+				D09E663124009A2C003CC631 /* BaseDevice.swift */,
+				D09E662B24009A2C003CC631 /* Brultech.swift */,
+				D09E662D24009A2C003CC631 /* BrultechChannels.swift */,
+				D09E662E24009A2C003CC631 /* Combox.swift */,
+				D09E662C24009A2C003CC631 /* ModBus.swift */,
+				D09E662F24009A2C003CC631 /* ModbusRegister.swift */,
+				D09E663024009A2C003CC631 /* Outback.swift */,
+				D09E6629240099EC003CC631 /* DeviceFiles */,
+				D09E65F924009891003CC631 /* AppDelegate.swift */,
+				D09E65FB24009891003CC631 /* SceneDelegate.swift */,
+				D09E65FD24009891003CC631 /* ContentView.swift */,
+				D09E65FF24009892003CC631 /* Assets.xcassets */,
+				D09E660424009892003CC631 /* LaunchScreen.storyboard */,
+				D09E660724009892003CC631 /* Info.plist */,
+				D09E660124009892003CC631 /* Preview Content */,
+			);
+			path = SolarMonitor;
+			sourceTree = "<group>";
+		};
+		D09E660124009892003CC631 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D09E660224009892003CC631 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D09E660F24009892003CC631 /* SolarMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D09E661024009892003CC631 /* SolarMonitorTests.swift */,
+				D09E661224009892003CC631 /* Info.plist */,
+			);
+			path = SolarMonitorTests;
+			sourceTree = "<group>";
+		};
+		D09E661A24009892003CC631 /* SolarMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D09E661B24009892003CC631 /* SolarMonitorUITests.swift */,
+				D09E661D24009892003CC631 /* Info.plist */,
+			);
+			path = SolarMonitorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0774CCB7216FAD5A00465AB6 /* SolarMonitor */ = {
+		D09E65F524009891003CC631 /* SolarMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0774CCE0216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitor" */;
+			buildConfigurationList = D09E662024009892003CC631 /* Build configuration list for PBXNativeTarget "SolarMonitor" */;
 			buildPhases = (
-				D7BFB406C7DD8B25516E3BAF /* [CP] Check Pods Manifest.lock */,
-				0774CCB4216FAD5A00465AB6 /* Sources */,
-				0774CCB5216FAD5A00465AB6 /* Frameworks */,
-				0774CCB6216FAD5A00465AB6 /* Resources */,
-				4E2670E8C821D939DE70E6BA /* [CP] Embed Pods Frameworks */,
+				D09E65F224009891003CC631 /* Sources */,
+				D09E65F324009891003CC631 /* Frameworks */,
+				D09E65F424009891003CC631 /* Resources */,
+				D013EB1024363A8F00F1BE8A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SolarMonitor;
+			packageProductDependencies = (
+				D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */,
+				D013EAF6243585E900F1BE8A /* Alamofire */,
+				D013EAFC24358C0F00F1BE8A /* ObjectMapper */,
+			);
 			productName = SolarMonitor;
-			productReference = 0774CCB8216FAD5A00465AB6 /* SolarMonitor.app */;
+			productReference = D09E65F624009891003CC631 /* SolarMonitor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0774CCCB216FAD5A00465AB6 /* SolarMonitorTests */ = {
+		D09E660B24009892003CC631 /* SolarMonitorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0774CCE3216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorTests" */;
+			buildConfigurationList = D09E662324009892003CC631 /* Build configuration list for PBXNativeTarget "SolarMonitorTests" */;
 			buildPhases = (
-				0774CCC8216FAD5A00465AB6 /* Sources */,
-				0774CCC9216FAD5A00465AB6 /* Frameworks */,
-				0774CCCA216FAD5A00465AB6 /* Resources */,
+				D09E660824009892003CC631 /* Sources */,
+				D09E660924009892003CC631 /* Frameworks */,
+				D09E660A24009892003CC631 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0774CCCE216FAD5A00465AB6 /* PBXTargetDependency */,
+				D09E660E24009892003CC631 /* PBXTargetDependency */,
 			);
 			name = SolarMonitorTests;
 			productName = SolarMonitorTests;
-			productReference = 0774CCCC216FAD5A00465AB6 /* SolarMonitorTests.xctest */;
+			productReference = D09E660C24009892003CC631 /* SolarMonitorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0774CCD6216FAD5A00465AB6 /* SolarMonitorUITests */ = {
+		D09E661624009892003CC631 /* SolarMonitorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0774CCE6216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorUITests" */;
+			buildConfigurationList = D09E662624009892003CC631 /* Build configuration list for PBXNativeTarget "SolarMonitorUITests" */;
 			buildPhases = (
-				0774CCD3216FAD5A00465AB6 /* Sources */,
-				0774CCD4216FAD5A00465AB6 /* Frameworks */,
-				0774CCD5216FAD5A00465AB6 /* Resources */,
+				D09E661324009892003CC631 /* Sources */,
+				D09E661424009892003CC631 /* Frameworks */,
+				D09E661524009892003CC631 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0774CCD9216FAD5A00465AB6 /* PBXTargetDependency */,
+				D09E661924009892003CC631 /* PBXTargetDependency */,
 			);
 			name = SolarMonitorUITests;
 			productName = SolarMonitorUITests;
-			productReference = 0774CCD7216FAD5A00465AB6 /* SolarMonitorUITests.xctest */;
+			productReference = D09E661724009892003CC631 /* SolarMonitorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0774CCB0216FAD5A00465AB6 /* Project object */ = {
+		D09E65EE24009891003CC631 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Eric Vickery";
 				TargetAttributes = {
-					0774CCB7216FAD5A00465AB6 = {
-						CreatedOnToolsVersion = 10.1;
+					D09E65F524009891003CC631 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
-					0774CCCB216FAD5A00465AB6 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 0774CCB7216FAD5A00465AB6;
+					D09E660B24009892003CC631 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D09E65F524009891003CC631;
 					};
-					0774CCD6216FAD5A00465AB6 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 0774CCB7216FAD5A00465AB6;
+					D09E661624009892003CC631 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D09E65F524009891003CC631;
 					};
 				};
 			};
-			buildConfigurationList = 0774CCB3216FAD5A00465AB6 /* Build configuration list for PBXProject "SolarMonitor" */;
+			buildConfigurationList = D09E65F124009891003CC631 /* Build configuration list for PBXProject "SolarMonitor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,40 +336,80 @@
 				en,
 				Base,
 			);
-			mainGroup = 0774CCAF216FAD5A00465AB6;
-			productRefGroup = 0774CCB9216FAD5A00465AB6 /* Products */;
+			mainGroup = D09E65ED24009891003CC631;
+			packageReferences = (
+				D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+				D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
+			productRefGroup = D09E65F724009891003CC631 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D013EAFF24363A2B00F1BE8A /* Products */;
+					ProjectRef = D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				0774CCB7216FAD5A00465AB6 /* SolarMonitor */,
-				0774CCCB216FAD5A00465AB6 /* SolarMonitorTests */,
-				0774CCD6216FAD5A00465AB6 /* SolarMonitorUITests */,
+				D09E65F524009891003CC631 /* SolarMonitor */,
+				D09E660B24009892003CC631 /* SolarMonitorTests */,
+				D09E661624009892003CC631 /* SolarMonitorUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D013EB0624363A2B00F1BE8A /* SwiftSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftSocket.framework;
+			remoteRef = D013EB0524363A2B00F1BE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D013EB0824363A2B00F1BE8A /* SwiftSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftSocket.framework;
+			remoteRef = D013EB0724363A2B00F1BE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D013EB0A24363A2B00F1BE8A /* SwiftSocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftSocket.framework;
+			remoteRef = D013EB0924363A2B00F1BE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D013EB0C24363A2B00F1BE8A /* iOS Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "iOS Example.app";
+			remoteRef = D013EB0B24363A2B00F1BE8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		0774CCB6216FAD5A00465AB6 /* Resources */ = {
+		D09E65F424009891003CC631 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070BE7E3219A262A0017C169 /* README.md in Resources */,
-				07A9F7D721754A8200CCDA8E /* DeviceFiles in Resources */,
-				0774CCC6216FAD5A00465AB6 /* LaunchScreen.storyboard in Resources */,
-				07A9F7DB21768FA800CCDA8E /* podfile in Resources */,
-				0774CCC3216FAD5A00465AB6 /* Assets.xcassets in Resources */,
-				0774CCC1216FAD5A00465AB6 /* Main.storyboard in Resources */,
+				D09E660624009892003CC631 /* LaunchScreen.storyboard in Resources */,
+				D09E660324009892003CC631 /* Preview Assets.xcassets in Resources */,
+				D09E662A240099EC003CC631 /* DeviceFiles in Resources */,
+				D09E660024009892003CC631 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0774CCCA216FAD5A00465AB6 /* Resources */ = {
+		D09E660A24009892003CC631 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0774CCD5216FAD5A00465AB6 /* Resources */ = {
+		D09E661524009892003CC631 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,123 +418,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4E2670E8C821D939DE70E6BA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SolarMonitor/Pods-SolarMonitor-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7BFB406C7DD8B25516E3BAF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SolarMonitor-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		0774CCB4216FAD5A00465AB6 /* Sources */ = {
+		D09E65F224009891003CC631 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A9F7D92176881600CCDA8E /* Brultech.swift in Sources */,
-				070BE7E8219C81140017C169 /* DirectionDotView.swift in Sources */,
-				0774CCF0216FAEE400465AB6 /* ModbusRegister.swift in Sources */,
-				0774CCEC216FAE9800465AB6 /* ModBus.swift in Sources */,
-				0774CCBE216FAD5A00465AB6 /* ViewController.swift in Sources */,
-				07A9F7D22175299400CCDA8E /* BaseDevice.swift in Sources */,
-				07A9F7D0217157C900CCDA8E /* Outback.swift in Sources */,
-				0774CCBC216FAD5A00465AB6 /* AppDelegate.swift in Sources */,
-				0774CCED216FAE9800465AB6 /* Combox.swift in Sources */,
-				07A9F7DD217699CA00CCDA8E /* BrultechChannels.swift in Sources */,
+				D09E65FA24009891003CC631 /* AppDelegate.swift in Sources */,
+				D09E65FC24009891003CC631 /* SceneDelegate.swift in Sources */,
+				D09E663424009A2C003CC631 /* BrultechChannels.swift in Sources */,
+				D09E663324009A2C003CC631 /* ModBus.swift in Sources */,
+				D09E663524009A2C003CC631 /* Combox.swift in Sources */,
+				D09E663224009A2C003CC631 /* Brultech.swift in Sources */,
+				D09E663824009A2C003CC631 /* BaseDevice.swift in Sources */,
+				D09E663724009A2C003CC631 /* Outback.swift in Sources */,
+				D09E663624009A2C003CC631 /* ModbusRegister.swift in Sources */,
+				D09E65FE24009891003CC631 /* ContentView.swift in Sources */,
+				D013EB13243687DC00F1BE8A /* SolarSystemUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0774CCC8216FAD5A00465AB6 /* Sources */ = {
+		D09E660824009892003CC631 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0774CCD1216FAD5A00465AB6 /* SolarMonitorTests.swift in Sources */,
+				D09E661124009892003CC631 /* SolarMonitorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0774CCD3216FAD5A00465AB6 /* Sources */ = {
+		D09E661324009892003CC631 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0774CCDC216FAD5A00465AB6 /* SolarMonitorUITests.swift in Sources */,
+				D09E661C24009892003CC631 /* SolarMonitorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0774CCCE216FAD5A00465AB6 /* PBXTargetDependency */ = {
+		D09E660E24009892003CC631 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0774CCB7216FAD5A00465AB6 /* SolarMonitor */;
-			targetProxy = 0774CCCD216FAD5A00465AB6 /* PBXContainerItemProxy */;
+			target = D09E65F524009891003CC631 /* SolarMonitor */;
+			targetProxy = D09E660D24009892003CC631 /* PBXContainerItemProxy */;
 		};
-		0774CCD9216FAD5A00465AB6 /* PBXTargetDependency */ = {
+		D09E661924009892003CC631 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0774CCB7216FAD5A00465AB6 /* SolarMonitor */;
-			targetProxy = 0774CCD8216FAD5A00465AB6 /* PBXContainerItemProxy */;
+			target = D09E65F524009891003CC631 /* SolarMonitor */;
+			targetProxy = D09E661824009892003CC631 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0774CCBF216FAD5A00465AB6 /* Main.storyboard */ = {
+		D09E660424009892003CC631 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0774CCC0216FAD5A00465AB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0774CCC4216FAD5A00465AB6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0774CCC5216FAD5A00465AB6 /* Base */,
+				D09E660524009892003CC631 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -445,7 +480,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0774CCDE216FAD5A00465AB6 /* Debug */ = {
+		D09E661E24009892003CC631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -477,7 +512,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -496,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -506,7 +540,7 @@
 			};
 			name = Debug;
 		};
-		0774CCDF216FAD5A00465AB6 /* Release */ = {
+		D09E661F24009892003CC631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -538,7 +572,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -551,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -561,13 +594,14 @@
 			};
 			name = Release;
 		};
-		0774CCE1216FAD5A00465AB6 /* Debug */ = {
+		D09E662124009892003CC631 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BC3EC47B7AD70BC31BD51B /* Pods-SolarMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,18 +609,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		0774CCE2216FAD5A00465AB6 /* Release */ = {
+		D09E662224009892003CC631 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97BF19740DC795E5501679EF /* Pods-SolarMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,12 +629,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		0774CCE4216FAD5A00465AB6 /* Debug */ = {
+		D09E662424009892003CC631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -607,6 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				INFOPLIST_FILE = SolarMonitorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,13 +650,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarMonitor.app/SolarMonitor";
 			};
 			name = Debug;
 		};
-		0774CCE5216FAD5A00465AB6 /* Release */ = {
+		D09E662524009892003CC631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -628,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				INFOPLIST_FILE = SolarMonitorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,13 +672,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarMonitor.app/SolarMonitor";
 			};
 			name = Release;
 		};
-		0774CCE7216FAD5A00465AB6 /* Debug */ = {
+		D09E662724009892003CC631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -655,13 +692,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SolarMonitor;
 			};
 			name = Debug;
 		};
-		0774CCE8216FAD5A00465AB6 /* Release */ = {
+		D09E662824009892003CC631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -675,7 +712,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SolarMonitor;
 			};
@@ -684,43 +721,88 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0774CCB3216FAD5A00465AB6 /* Build configuration list for PBXProject "SolarMonitor" */ = {
+		D09E65F124009891003CC631 /* Build configuration list for PBXProject "SolarMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0774CCDE216FAD5A00465AB6 /* Debug */,
-				0774CCDF216FAD5A00465AB6 /* Release */,
+				D09E661E24009892003CC631 /* Debug */,
+				D09E661F24009892003CC631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0774CCE0216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitor" */ = {
+		D09E662024009892003CC631 /* Build configuration list for PBXNativeTarget "SolarMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0774CCE1216FAD5A00465AB6 /* Debug */,
-				0774CCE2216FAD5A00465AB6 /* Release */,
+				D09E662124009892003CC631 /* Debug */,
+				D09E662224009892003CC631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0774CCE3216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorTests" */ = {
+		D09E662324009892003CC631 /* Build configuration list for PBXNativeTarget "SolarMonitorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0774CCE4216FAD5A00465AB6 /* Debug */,
-				0774CCE5216FAD5A00465AB6 /* Release */,
+				D09E662424009892003CC631 /* Debug */,
+				D09E662524009892003CC631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0774CCE6216FAD5A00465AB6 /* Build configuration list for PBXNativeTarget "SolarMonitorUITests" */ = {
+		D09E662624009892003CC631 /* Build configuration list for PBXNativeTarget "SolarMonitorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0774CCE7216FAD5A00465AB6 /* Debug */,
-				0774CCE8216FAD5A00465AB6 /* Release */,
+				D09E662724009892003CC631 /* Debug */,
+				D09E662824009892003CC631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.4;
+			};
+		};
+		D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.5;
+			};
+		};
+		D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ksloginov/ObjectMapper.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+		D013EAF6243585E900F1BE8A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D013EAFC24358C0F00F1BE8A /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 0774CCB0216FAD5A00465AB6 /* Project object */;
+	rootObject = D09E65EE24009891003CC631 /* Project object */;
 }
