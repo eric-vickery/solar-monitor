@@ -93,6 +93,7 @@
 /* Begin PBXFileReference section */
 		D013EAFE24363A2B00F1BE8A /* SwiftSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSocket.xcodeproj; path = ../SwiftSocket/SwiftSocket.xcodeproj; sourceTree = "<group>"; };
 		D013EB12243687DC00F1BE8A /* SolarSystemUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemUIView.swift; sourceTree = "<group>"; };
+		D01DA3ED245B342E00DEAC08 /* SolarMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SolarMonitor.entitlements; sourceTree = "<group>"; };
 		D09E65F624009891003CC631 /* SolarMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09E65F924009891003CC631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D09E65FB24009891003CC631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +198,7 @@
 		D09E65F824009891003CC631 /* SolarMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				D01DA3ED245B342E00DEAC08 /* SolarMonitor.entitlements */,
 				D013EB11243687B200F1BE8A /* UI Widgets */,
 				D09E663124009A2C003CC631 /* BaseDevice.swift */,
 				D09E662B24009A2C003CC631 /* Brultech.swift */,
@@ -530,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -598,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SolarMonitor/SolarMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
@@ -609,6 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -618,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SolarMonitor/SolarMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
@@ -629,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
