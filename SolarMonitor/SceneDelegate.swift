@@ -19,14 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        if let outbackDevice = BaseDevice.loadFromFile(deviceName: "Outback") as! Outback?,
-            let comboxDevice = BaseDevice.loadFromFile(deviceName: "Combox") as! Combox?
+        if let comboxDevice = BaseDevice.loadFromFile(deviceName: "Combox") as! Combox?
         {
-            connectToOutback(outback: outbackDevice)
             connectToCombox(combox: comboxDevice)
             
             // Create the SwiftUI view that provides the window contents.
-            let contentView = ContentView(outbackDevice: outbackDevice, comboxDevice: comboxDevice)
+            let contentView = ContentView(comboxDevice: comboxDevice)
 
             // Use a UIHostingController as window root view controller.
             if let windowScene = scene as? UIWindowScene {
