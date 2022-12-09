@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07DE20C22941971A00CA4C9D /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 07DE20C12941971A00CA4C9D /* CocoaMQTT */; };
 		D013EAF42435839C00F1BE8A /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */; };
 		D013EAF7243585E900F1BE8A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAF6243585E900F1BE8A /* Alamofire */; };
 		D013EAFD24358C0F00F1BE8A /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAFC24358C0F00F1BE8A /* ObjectMapper */; };
@@ -125,6 +126,7 @@
 			files = (
 				D013EAFD24358C0F00F1BE8A /* ObjectMapper in Frameworks */,
 				D013EAF42435839C00F1BE8A /* CocoaAsyncSocket in Frameworks */,
+				07DE20C22941971A00CA4C9D /* CocoaMQTT in Frameworks */,
 				D013EAF7243585E900F1BE8A /* Alamofire in Frameworks */,
 				D013EB0E24363A8E00F1BE8A /* SwiftSocket.framework in Frameworks */,
 			);
@@ -266,6 +268,7 @@
 				D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */,
 				D013EAF6243585E900F1BE8A /* Alamofire */,
 				D013EAFC24358C0F00F1BE8A /* ObjectMapper */,
+				07DE20C12941971A00CA4C9D /* CocoaMQTT */,
 			);
 			productName = SolarMonitor;
 			productReference = D09E65F624009891003CC631 /* SolarMonitor.app */;
@@ -343,6 +346,7 @@
 				D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
 				D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				07DE20C02941971A00CA4C9D /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
 			);
 			productRefGroup = D09E65F724009891003CC631 /* Products */;
 			projectDirPath = "";
@@ -603,6 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SolarMonitor/SolarMonitor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
@@ -625,6 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SolarMonitor/SolarMonitor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
@@ -768,6 +774,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		07DE20C02941971A00CA4C9D /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.8;
+			};
+		};
 		D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
@@ -795,6 +809,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		07DE20C12941971A00CA4C9D /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07DE20C02941971A00CA4C9D /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
 		D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
