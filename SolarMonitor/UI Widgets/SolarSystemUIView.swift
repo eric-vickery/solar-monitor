@@ -13,14 +13,22 @@ struct SolarSystemUIView: View {
 
     var body: some View {
         VStack {
-            Text(device.getTypeName())
+            Text(device.getName())
             .font(.largeTitle)
             .bold()
             HStack(spacing: 20) {
-                Text("Solar")
+                Text("Available Solar")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.solarPower)
+                Text(device.availableSolarPower + " W")
+                    .font(.headline)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+            }
+            HStack(spacing: 20) {
+                Text("Solar Harvest")
+                    .font(.headline)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                Text(device.currentSolarPower + " W")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -28,7 +36,7 @@ struct SolarSystemUIView: View {
                 Text("Load")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.loadPower)
+                Text(device.currentLoadPower + " W")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -36,7 +44,7 @@ struct SolarSystemUIView: View {
                 Text("Battery Voltage")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.batteryVoltage)
+                Text(device.batteryVoltage + " V")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -44,7 +52,7 @@ struct SolarSystemUIView: View {
                 Text("Battery SOC")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.batterySOC)
+                Text(device.batterySOC + "%")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -52,7 +60,7 @@ struct SolarSystemUIView: View {
                 Text("Battery Amps")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.batteryAmps)
+                Text(device.batteryAmps + " A")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -60,7 +68,7 @@ struct SolarSystemUIView: View {
                 Text("Battery Power")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.batteryPower)
+                Text(device.batteryPower + " W")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -68,23 +76,10 @@ struct SolarSystemUIView: View {
                 Text("Battery Temperature")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.batteryTemperature)
+                Text(device.batteryTemperatureC + " C / " + device.batteryTemperatureF + " F")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
-        }
-    }
-}
-
-struct RowLabel : View {
-    var label: String
-    var body: some View {
-        ZStack(alignment: .trailing) {
-            Text("Battery Temperature")
-                .opacity(0)
-                .accessibility(hidden: true)
-            Text(label)
-//                .multilineTextAlignment(.trailing)
         }
     }
 }
