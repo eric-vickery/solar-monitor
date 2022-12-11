@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		07307CAE29457BB9001E2E55 /* MQTTDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07307CAD29457BAE001E2E55 /* MQTTDevice.swift */; };
 		07DE20C22941971A00CA4C9D /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 07DE20C12941971A00CA4C9D /* CocoaMQTT */; };
-		D013EAF42435839C00F1BE8A /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */; };
-		D013EAF7243585E900F1BE8A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAF6243585E900F1BE8A /* Alamofire */; };
-		D013EAFD24358C0F00F1BE8A /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = D013EAFC24358C0F00F1BE8A /* ObjectMapper */; };
 		D013EB13243687DC00F1BE8A /* SolarSystemUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D013EB12243687DC00F1BE8A /* SolarSystemUIView.swift */; };
 		D09E65FA24009891003CC631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E65F924009891003CC631 /* AppDelegate.swift */; };
 		D09E65FC24009891003CC631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E65FB24009891003CC631 /* SceneDelegate.swift */; };
@@ -74,10 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D013EAFD24358C0F00F1BE8A /* ObjectMapper in Frameworks */,
-				D013EAF42435839C00F1BE8A /* CocoaAsyncSocket in Frameworks */,
 				07DE20C22941971A00CA4C9D /* CocoaMQTT in Frameworks */,
-				D013EAF7243585E900F1BE8A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,9 +170,6 @@
 			);
 			name = SolarMonitor;
 			packageProductDependencies = (
-				D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */,
-				D013EAF6243585E900F1BE8A /* Alamofire */,
-				D013EAFC24358C0F00F1BE8A /* ObjectMapper */,
 				07DE20C12941971A00CA4C9D /* CocoaMQTT */,
 			);
 			productName = SolarMonitor;
@@ -254,9 +245,6 @@
 			);
 			mainGroup = D09E65ED24009891003CC631;
 			packageReferences = (
-				D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
-				D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */,
-				D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				07DE20C02941971A00CA4C9D /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
 			);
 			productRefGroup = D09E65F724009891003CC631 /* Products */;
@@ -648,30 +636,6 @@
 				minimumVersion = 2.0.8;
 			};
 		};
-		D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.6.4;
-			};
-		};
-		D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.5;
-			};
-		};
-		D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ksloginov/ObjectMapper.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -679,21 +643,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 07DE20C02941971A00CA4C9D /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
 			productName = CocoaMQTT;
-		};
-		D013EAF32435839C00F1BE8A /* CocoaAsyncSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D013EAF22435839C00F1BE8A /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
-			productName = CocoaAsyncSocket;
-		};
-		D013EAF6243585E900F1BE8A /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D013EAF5243585E900F1BE8A /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		D013EAFC24358C0F00F1BE8A /* ObjectMapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D013EAFB24358C0F00F1BE8A /* XCRemoteSwiftPackageReference "ObjectMapper" */;
-			productName = ObjectMapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
