@@ -11,6 +11,7 @@ import CocoaMQTT
 
 class BaseDevice: NSObject, ObservableObject
 {
+    @Published var lastPublishedTime = ""
     @Published var availableSolarPower = ""
     @Published var currentSolarPower = ""
     @Published var currentLoadPower = ""
@@ -43,6 +44,7 @@ class BaseDevice: NSObject, ObservableObject
             if let device = device
             {
                 device.testMode = testMode
+                device.lastPublishedTime = ""
                 device.availableSolarPower = "8800"
                 device.currentSolarPower = "1800"
                 device.currentLoadPower = "650"

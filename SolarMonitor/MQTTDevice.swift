@@ -14,6 +14,7 @@ class MQTTDevice: BaseDevice
     static let mqttClientID = "SolarMonitor"
     static let mqttHost = "192.168.211.1"
     static let mqttPort: UInt16 = 1883
+    static let lastPublishedTime = "combox/lastPublishedTime"
     static let availableSolarPowerTopic = "combox/availableSolar"
     static let currentSolarPowerTopic = "combox/currentSolar"
     static let currentLoadTopic = "combox/currentLoad"
@@ -37,6 +38,10 @@ class MQTTDevice: BaseDevice
             mqtt.didReceiveMessage = { mqtt, message, id in
                 switch message.topic
                 {
+                case MQTTDevice.lastPublishedTime:
+                    self.lastPublishedTime = message.string!
+                    break;
+                    
                 case MQTTDevice.availableSolarPowerTopic:
                     self.availableSolarPower = message.string!
                     break;
@@ -81,6 +86,7 @@ class MQTTDevice: BaseDevice
                 if connectionState == .connected
                 {
                     self.connected = true
+                    mqtt.subscribe(MQTTDevice.lastPublishedTime, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.availableSolarPowerTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.currentSolarPowerTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.currentLoadTopic, qos: CocoaMQTTQoS.qos1)

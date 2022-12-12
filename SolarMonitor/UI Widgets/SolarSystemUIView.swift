@@ -80,6 +80,14 @@ struct SolarSystemUIView: View {
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
+            HStack(spacing: 20) {
+                Text("Last Published Time")
+                    .font(.headline)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                Text(device.lastPublishedTime)
+                    .font(.headline)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+            }
         }
     }
 }
