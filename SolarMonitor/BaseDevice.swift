@@ -11,6 +11,7 @@ import CocoaMQTT
 
 class BaseDevice: NSObject, ObservableObject
 {
+    // Solar Data
     @Published var lastPublishedTime = ""
     @Published var availableSolarPower = ""
     @Published var currentSolarPower = ""
@@ -21,7 +22,26 @@ class BaseDevice: NSObject, ObservableObject
     @Published var batteryPower = ""
     @Published var batteryTemperatureF = ""
     @Published var batteryTemperatureC = ""
-
+    // House Data
+    @Published var wellPump = ""
+    @Published var evCharger = ""
+    @Published var airCompressor = ""
+    @Published var southAndWest240 = ""
+    @Published var welder = ""
+    @Published var dustCollector = ""
+    @Published var wetWall = ""
+    @Published var southAndWest120 = ""
+    @Published var solarRoomTemperature = ""
+    @Published var kitchenWestWallPlugs = ""
+    @Published var kitchenSouthWallPlugs = ""
+    @Published var masterBathAndPellet = ""
+    @Published var masterBedroom = ""
+    @Published var kateOffice = ""
+    @Published var ericOffice = ""
+    @Published var livingRoomPelletAndTV = ""
+    @Published var stoveDishwasher = ""
+    @Published var utilityRoomTemperature = ""
+    
     var connected = false
     var testMode = false
 	
