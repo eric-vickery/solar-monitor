@@ -22,6 +22,7 @@ class BaseDevice: NSObject, ObservableObject
     @Published var batteryPower = ""
     @Published var batteryTemperatureF = ""
     @Published var batteryTemperatureC = ""
+    @Published var chargerState = ""
     // House Data
     @Published var wellPump = ""
     @Published var evCharger = ""

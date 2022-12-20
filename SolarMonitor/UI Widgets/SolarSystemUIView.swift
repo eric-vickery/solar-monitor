@@ -14,8 +14,8 @@ struct SolarSystemUIView: View {
     var body: some View {
         VStack {
             Text(device.getName())
-            .font(.largeTitle)
-            .bold()
+                .font(.largeTitle)
+                .bold()
             HStack(spacing: 20) {
                 Text("Available Solar")
                     .font(.headline)
@@ -81,13 +81,21 @@ struct SolarSystemUIView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
             HStack(spacing: 20) {
-                Text("")
+                Text("Charger State")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text("")
+                Text(device.chargerState)
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
+        }
+        HStack(spacing: 20) {
+            Text("")
+                .font(.headline)
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+            Text("")
+                .font(.headline)
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
         }
         VStack {
             Text("House")

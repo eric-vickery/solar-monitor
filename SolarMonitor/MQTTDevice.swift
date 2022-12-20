@@ -25,6 +25,8 @@ class MQTTDevice: BaseDevice
     static let batteryPowerTopic = "combox/batteryPower"
     static let batteryTemperatureFTopic = "combox/batteryTemperature/Fahrenheit"
     static let batteryTemperatureCTopic = "combox/batteryTemperature/Celcius"
+    static let chargerStateTopic = "combox/charger/state"
+
     //Brultech(House) topics
     static let wellPumpTopic = "dashbox/01001232/c2/watt"
     static let evChargerTopic = "dashbox/01001232/c4/watt"
@@ -96,6 +98,10 @@ class MQTTDevice: BaseDevice
                    
                 case MQTTDevice.batteryTemperatureCTopic:
                     self.batteryTemperatureC = message.string!
+                    break
+                    
+                case MQTTDevice.chargerStateTopic:
+                    self.chargerState = message.string!
                     break
 
                 case MQTTDevice.wellPumpTopic:
@@ -189,6 +195,7 @@ class MQTTDevice: BaseDevice
                     mqtt.subscribe(MQTTDevice.batteryPowerTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.batteryTemperatureFTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.batteryTemperatureCTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.chargerStateTopic, qos: CocoaMQTTQoS.qos1)
                     // House Topics
                     mqtt.subscribe(MQTTDevice.wellPumpTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.evChargerTopic, qos: CocoaMQTTQoS.qos1)
