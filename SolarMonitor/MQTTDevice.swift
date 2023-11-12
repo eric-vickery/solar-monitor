@@ -23,29 +23,43 @@ class MQTTDevice: BaseDevice
     static let batterySOCTopic = "combox/batterySOC"
     static let batteryAmpsTopic = "combox/batteryAmps"
     static let batteryPowerTopic = "combox/batteryPower"
-    static let batteryTemperatureFTopic = "combox/batteryTemperature/Fahrenheit"
-    static let batteryTemperatureCTopic = "combox/batteryTemperature/Celcius"
+    static let batteryTempFTopic = "combox/batteryTemperature/Fahrenheit"
+    static let batteryTempCTopic = "combox/batteryTemperature/Celcius"
     static let chargerStateTopic = "combox/charger/state"
 
     //Brultech(House) topics
-    static let wellPumpTopic = "dashbox/01001232/c2/watt"
-    static let evChargerTopic = "dashbox/01001232/c4/watt"
-    static let airCompressorTopic = "dashbox/01001232/c7/watt"
-    static let southAndWest240Topic = "dashbox/01001232/c8/watt"
-    static let welderTopic = "dashbox/01001232/c9/watt"
-    static let dustCollectorTopic = "dashbox/01001232/c10/watt"
-    static let wetWallTopic = "dashbox/01001232/c11/watt"
-    static let southAndWest120Topic = "dashbox/01001232/c12/watt"
-    static let solarRoomTemperatureTopic = "dashbox/01001232/t1/val"
-    static let kitchenWestWallPlugsTopic = "dashbox/01100599/c7/watt"
-    static let kitchenSouthWallPlugsTopic = "dashbox/01100599/c8/watt"
-    static let masterBathAndPelletTopic = "dashbox/01100599/c11/watt"
-    static let masterBedroomTopic = "dashbox/01100599/c12/watt"
-    static let kateOfficeTopic = "dashbox/01100599/c13/watt"
-    static let ericOfficeTopic = "dashbox/01100599/c14/watt"
-    static let livingRoomPelletAndTVTopic = "dashbox/01100599/c15/watt"
-    static let stoveDishwasherTopic = "dashbox/01100599/c16/watt"
-    static let utilityRoomTemperatureTopic = "dashbox/01100599/t1/val"
+    static let mainTopic = "dashbox/vickeryranch/main"
+    static let wellPumpTopic = "dashbox/vickeryranch/wellPump"
+    static let evChargerTopic = "dashbox/vickeryranch/evCharger"
+    static let southWallPlugTopic = "dashbox/vickeryranch/southWallPlug"
+    static let airCompressorTopic = "dashbox/vickeryranch/airCompressor"
+    static let southWest240Topic = "dashbox/vickeryranch/southWest240"
+    static let welderTopic = "dashbox/vickeryranch/welder"
+    static let dustCollectorTopic = "dashbox/vickeryranch/dustCollector"
+    static let wetWallTopic = "dashbox/vickeryranch/wetWall"
+    static let southWest120Topic = "dashbox/vickeryranch/southWest120"
+    static let solarRoomTempFTopic = "dashbox/vickeryranch/solarRoomTempF"
+    static let solarRoomTempCTopic = "dashbox/vickeryranch/solarRoomTempC"
+    static let entryTopic = "dashbox/vickeryranch/entry"
+    static let diningRoomHeaterTopic = "dashbox/vickeryranch/diningRoomHeater"
+    static let hallLightsPlugsTopic = "dashbox/vickeryranch/hallLightsPlugs"
+    static let kitchenDiningLightsTopic = "dashbox/vickeryranch/kitchenDiningLights"
+    static let kitchenWestWallPlugsTopic = "dashbox/vickeryranch/kitchenWestWallPlugs"
+    static let kitchenSouthWallPlugsTopic = "dashbox/vickeryranch/kitchenSouthWallPlugs"
+    static let washingMachineTopic = "dashbox/vickeryranch/washingMachine"
+    static let dryerTopic = "dashbox/vickeryranch/dryer"
+    static let masterBathPelletTopic = "dashbox/vickeryranch/masterBathPellet"
+    static let masterBedroomTopic = "dashbox/vickeryranch/masterBedroom"
+    static let kateOfficeTopic = "dashbox/vickeryranch/kateOffice"
+    static let ericOfficeTopic = "dashbox/vickeryranch/ericOffice"
+    static let livingroomPelletTVTopic = "dashbox/vickeryranch/livingroomPelletTV"
+    static let stoveDishwasherTopic = "dashbox/vickeryranch/stoveDishwasher"
+    static let refrigeratorTopic = "dashbox/vickeryranch/refrigerator"
+    static let livingroomLightTopic = "dashbox/vickeryranch/livingroomLight"
+    static let utilityRoomPlugsTopic = "dashbox/vickeryranch/utilityRoomPlugs"
+    static let utilityRoomTempFTopic = "dashbox/vickeryranch/utilityRoomTempF"
+    static let utilityRoomTempCTopic = "dashbox/vickeryranch/utilityRoomTempC"
+    static let houseVoltageTopic = "dashbox/vickeryranch/houseVoltage"
 
     var mqtt: CocoaMQTT?
 
@@ -92,12 +106,12 @@ class MQTTDevice: BaseDevice
                     self.batteryPower = message.string!
                     break
                    
-                case MQTTDevice.batteryTemperatureFTopic:
-                    self.batteryTemperatureF = message.string!
+                case MQTTDevice.batteryTempFTopic:
+                    self.batteryTempF = message.string!
                     break
                    
-                case MQTTDevice.batteryTemperatureCTopic:
-                    self.batteryTemperatureC = message.string!
+                case MQTTDevice.batteryTempCTopic:
+                    self.batteryTempC = message.string!
                     break
                     
                 case MQTTDevice.chargerStateTopic:
@@ -116,7 +130,7 @@ class MQTTDevice: BaseDevice
                     self.airCompressor = message.string!
                     break
 
-                case MQTTDevice.southAndWest240Topic:
+                case MQTTDevice.southWest240Topic:
                     self.southAndWest240 = message.string!
                     break
 
@@ -132,12 +146,16 @@ class MQTTDevice: BaseDevice
                     self.wetWall = message.string!
                     break
 
-                case MQTTDevice.southAndWest120Topic:
+                case MQTTDevice.southWest120Topic:
                     self.southAndWest120 = message.string!
                     break
 
-                case MQTTDevice.solarRoomTemperatureTopic:
-                    self.solarRoomTemperature = message.string!
+                case MQTTDevice.solarRoomTempFTopic:
+                    self.solarRoomTempF = message.string!
+                    break
+
+                case MQTTDevice.solarRoomTempCTopic:
+                    self.solarRoomTempC = message.string!
                     break
 
                 case MQTTDevice.kitchenWestWallPlugsTopic:
@@ -148,7 +166,7 @@ class MQTTDevice: BaseDevice
                     self.kitchenSouthWallPlugs = message.string!
                     break
 
-                case MQTTDevice.masterBathAndPelletTopic:
+                case MQTTDevice.masterBathPelletTopic:
                     self.masterBathAndPellet = message.string!
                     break
 
@@ -164,7 +182,7 @@ class MQTTDevice: BaseDevice
                     self.ericOffice = message.string!
                     break
 
-                case MQTTDevice.livingRoomPelletAndTVTopic:
+                case MQTTDevice.livingroomPelletTVTopic:
                     self.livingRoomPelletAndTV = message.string!
                     break
 
@@ -172,8 +190,12 @@ class MQTTDevice: BaseDevice
                     self.stoveDishwasher = message.string!
                     break
 
-                case MQTTDevice.utilityRoomTemperatureTopic:
-                    self.utilityRoomTemperature = message.string!
+                case MQTTDevice.utilityRoomTempFTopic:
+                    self.utilityRoomTempF = message.string!
+                    break
+
+                case MQTTDevice.utilityRoomTempCTopic:
+                    self.utilityRoomTempC = message.string!
                     break
 
                 default:
@@ -193,28 +215,30 @@ class MQTTDevice: BaseDevice
                     mqtt.subscribe(MQTTDevice.batterySOCTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.batteryAmpsTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.batteryPowerTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.batteryTemperatureFTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.batteryTemperatureCTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.batteryTempFTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.batteryTempCTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.chargerStateTopic, qos: CocoaMQTTQoS.qos1)
                     // House Topics
                     mqtt.subscribe(MQTTDevice.wellPumpTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.evChargerTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.airCompressorTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.southAndWest240Topic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.southWest240Topic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.welderTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.dustCollectorTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.wetWallTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.southAndWest120Topic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.solarRoomTemperatureTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.southWest120Topic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.solarRoomTempFTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.solarRoomTempCTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.kitchenWestWallPlugsTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.kitchenSouthWallPlugsTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.masterBathAndPelletTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.masterBathPelletTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.masterBedroomTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.kateOfficeTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.ericOfficeTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.livingRoomPelletAndTVTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.livingroomPelletTVTopic, qos: CocoaMQTTQoS.qos1)
                     mqtt.subscribe(MQTTDevice.stoveDishwasherTopic, qos: CocoaMQTTQoS.qos1)
-                    mqtt.subscribe(MQTTDevice.utilityRoomTemperatureTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.utilityRoomTempFTopic, qos: CocoaMQTTQoS.qos1)
+                    mqtt.subscribe(MQTTDevice.utilityRoomTempCTopic, qos: CocoaMQTTQoS.qos1)
                 }
             }
         }

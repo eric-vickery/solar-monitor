@@ -19,8 +19,8 @@ class BaseDevice: NSObject, ObservableObject
     @Published var batterySOC = ""
     @Published var batteryAmps = ""
     @Published var batteryPower = ""
-    @Published var batteryTemperatureF = ""
-    @Published var batteryTemperatureC = ""
+    @Published var batteryTempF = ""
+    @Published var batteryTempC = ""
     @Published var chargerState = ""
     // House Data
     @Published var wellPump = ""
@@ -31,7 +31,8 @@ class BaseDevice: NSObject, ObservableObject
     @Published var dustCollector = ""
     @Published var wetWall = ""
     @Published var southAndWest120 = ""
-    @Published var solarRoomTemperature = ""
+    @Published var solarRoomTempF = ""
+    @Published var solarRoomTempC = ""
     @Published var kitchenWestWallPlugs = ""
     @Published var kitchenSouthWallPlugs = ""
     @Published var masterBathAndPellet = ""
@@ -40,8 +41,9 @@ class BaseDevice: NSObject, ObservableObject
     @Published var ericOffice = ""
     @Published var livingRoomPelletAndTV = ""
     @Published var stoveDishwasher = ""
-    @Published var utilityRoomTemperature = ""
-    
+    @Published var utilityRoomTempF = ""
+    @Published var utilityRoomTempC = ""
+
     var connected = false
     var testMode = false
 	
@@ -72,8 +74,8 @@ class BaseDevice: NSObject, ObservableObject
                 device.batterySOC = "100"
                 device.batteryAmps = "12.00"
                 device.batteryPower = "400"
-                device.batteryTemperatureF = "93"
-                device.batteryTemperatureC = "12"
+                device.batteryTempF = "93"
+                device.batteryTempC = "12"
             }
         }
 		

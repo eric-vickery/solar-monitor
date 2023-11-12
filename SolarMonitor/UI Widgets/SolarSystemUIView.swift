@@ -76,7 +76,7 @@ struct SolarSystemUIView: View {
                 Text("Battery Temperature")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                Text(device.batteryTemperatureC + " C / " + device.batteryTemperatureF + " F")
+                Text(device.batteryTempC + " C / " + device.batteryTempF + " F")
                     .font(.headline)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
             }
@@ -235,7 +235,7 @@ struct SolarSystemUIView: View {
                     Text("Solar Room Temp")
                         .font(.headline)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                    Text(device.solarRoomTemperature + " F")
+                    Text(device.solarRoomTempC + " C / " + device.solarRoomTempF + " F")
                         .font(.headline)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 }
@@ -243,7 +243,7 @@ struct SolarSystemUIView: View {
                     Text("Utility Room Temp")
                         .font(.headline)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
-                    Text(device.utilityRoomTemperature + " F")
+                    Text(device.utilityRoomTempC + " C / " + device.utilityRoomTempF + " F")
                         .font(.headline)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                 }

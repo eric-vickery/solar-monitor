@@ -467,6 +467,7 @@
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Solar Monitor";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +491,7 @@
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Solar Monitor";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
