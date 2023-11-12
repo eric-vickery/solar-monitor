@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var comboxDevice: Combox
+    @ObservedObject var mqttDevice: MQTTDevice
 
     var body: some View {
-        SolarSystemUIView(device: comboxDevice)
+        SolarSystemUIView(device: mqttDevice)
     }
 }
