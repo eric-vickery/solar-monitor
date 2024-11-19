@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -218,8 +218,9 @@
 		D09E65EE24009891003CC631 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1610;
 				ORGANIZATIONNAME = "Eric Vickery";
 				TargetAttributes = {
 					D09E65F524009891003CC631 = {
@@ -377,6 +378,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -438,6 +440,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -464,7 +467,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
-				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				DEVELOPMENT_TEAM = N89TBFRXVU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Solar Monitor";
@@ -472,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -488,7 +491,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
-				DEVELOPMENT_TEAM = CWNCTDGDL5;
+				DEVELOPMENT_TEAM = N89TBFRXVU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Solar Monitor";
@@ -496,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenitymountainranch.SolarMonitorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -507,7 +510,6 @@
 		D09E662424009892003CC631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
@@ -529,7 +531,6 @@
 		D09E662524009892003CC631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
@@ -551,7 +552,6 @@
 		D09E662724009892003CC631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				INFOPLIST_FILE = SolarMonitorUITests/Info.plist;
@@ -571,7 +571,6 @@
 		D09E662824009892003CC631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				INFOPLIST_FILE = SolarMonitorUITests/Info.plist;
