@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ObjectMapper
 import CocoaMQTT
 
 class BaseDevice: NSObject, ObservableObject
