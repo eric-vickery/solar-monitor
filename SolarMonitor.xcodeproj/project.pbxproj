@@ -467,7 +467,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
-				DEVELOPMENT_TEAM = N89TBFRXVU;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Solar Monitor";
@@ -491,7 +491,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SolarMonitor/Preview Content\"";
-				DEVELOPMENT_TEAM = N89TBFRXVU;
+				DEVELOPMENT_TEAM = CWNCTDGDL5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SolarMonitor/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Solar Monitor";

@@ -12,7 +12,7 @@ import CocoaMQTT
 class MQTTDevice: BaseDevice
 {
     static let mqttClientID = "SolarMonitor"
-    static let mqttHost = "192.168.211.1"
+    static let mqttHost = "mqtt.internal.fiedlervickery.com"
     static let mqttPort: UInt16 = 1883
     // Combox(Solar) topics
     static let lastPublishedTime = "combox/lastPublishedTime"
